@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talk to Me</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav id="navbar"></nav>
+
+  <main>
+    <h1>Talk to Me</h1>
+    <p>
+      I’m Ian. This space is for you to speak your mind — no need for names, no pressure, just you and your words.
+    </p>
+    <p>
+      <strong>If you want a reply:</strong><br>
+      Please email <a href="mailto:ian_de_vries3@hotmail.com">ian_de_vries3@hotmail.com</a>.<br>
+      This terminal is completely anonymous — I can read your message, but I can’t reply unless you tell me how.
+    </p>
+
+    <form action="https://formspree.io/f/xyzjaewq" method="POST">
+      <label>
+        Your email (optional):<br />
+        <input type="email" name="email" />
+      </label><br>
+      <label>
+        Your message:<br />
+        <textarea name="message" required></textarea>
+      </label><br>
+      <button type="submit">Send</button>
+    </form>
+
+    <footer>
+      <p><a href="https://facebook.com" target="_blank">Visit our Facebook page</a></p>
+    </footer>
+  </main>
+
+  <script>
+    fetch('nav.html')
+      .then(res => {
+        if (!res.ok) throw new Error('Failed to load nav');
+        return res.text();
+      })
+      .then(html => {
+        document.getElementById('navbar').innerHTML = html;
+      })
+      .catch(err => {
+        document.getElementById('navbar').innerHTML = '<!-- nav failed -->';
+        console.error('Nav load error:', err);
+      });
+  </script>
+</body>
+</html>
+

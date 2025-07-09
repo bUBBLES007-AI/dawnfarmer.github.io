@@ -1,0 +1,15 @@
+index.html
+about.html
+openai.html
+tools.html
+contact.html
+style/
+    dark.css
+images/
+    logo.png
+    background.jpg
+    photos/
+scripts/
+    helper.js (if needed later)
+downloads/
+    what_i_need.pdf
