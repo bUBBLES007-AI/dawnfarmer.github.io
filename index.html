@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Talk to Me</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>To Gillian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #fdfaf6;
+      color: #333;
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #444;
+    }
+    img {
+      display: block;
+      margin: 2em auto;
+      max-width: 100%;
+      height: auto;
+    }
+    .next-link {
+      display: block;
+      text-align: center;
+      margin-top: 3em;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #555;
+      border: 1px solid #ccc;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      transition: background 0.3s ease;
+    }
+    .next-link:hover {
+      background: #eee;
+    }
+  </style>
 </head>
 <body>
-  <nav id="navbar"></nav>
 
-  <main>
-    <h1>Talk to Me</h1>
-    <p>
-      I’m Ian. This space is for you to speak your mind — no need for names, no pressure, just you and your words.
-    </p>
-    <p>
-      <strong>If you want a reply:</strong><br>
-      Please email <a href="mailto:ian_de_vries3@hotmail.com">ian_de_vries3@hotmail.com</a>.<br>
-      This terminal is completely anonymous — I can read your message, but I can’t reply unless you tell me how.
-    </p>
+  <h1>To Gillian</h1>
 
-    <form action="https://formspree.io/f/xyzjaewq" method="POST">
-      <label>
-        Your email (optional):<br />
-        <input type="email" name="email" />
-      </label><br>
-      <label>
-        Your message:<br />
-        <textarea name="message" required></textarea>
-      </label><br>
-      <button type="submit">Send</button>
-    </form>
+  <p>I remember a girl from school — a legal secretary, I think. Gillian was cool, genuinely cool. Big heart. Kind. A good student. The kind of person I wish I'd had the courage to know. But I didn't. That was on me. Not the school, not her — me.</p>
 
-    <footer>
-      <p><a href="https://facebook.com" target="_blank">Visit our Facebook page</a></p>
-    </footer>
-  </main>
+  <p>I was reserved. Too much had happened. I mistook cruelty for friendship more than once. There were guys who smiled at me one day and threw rocks the next. I learned to stay small, to disappear. And in doing that, I missed out. Not on everything — but on enough.</p>
 
-  <script>
-    fetch('nav.html')
-      .then(res => {
-        if (!res.ok) throw new Error('Failed to load nav');
-        return res.text();
-      })
-      .then(html => {
-        document.getElementById('navbar').innerHTML = html;
-      })
-      .catch(err => {
-        document.getElementById('navbar').innerHTML = '<!-- nav failed -->';
-        console.error('Nav load error:', err);
-      });
-  </script>
+  <p>I carried pain like a badge. Being molested. Betrayed. Overlooked. I let those shadows take up all the space. But the truth is, there were good people too. I just didn't know how to see them.</p>
+
+  <p><strong>Gillian</strong> was one of them.</p>
+
+  <p>Years later, I saw her name. I reached out. She responded — kindly. And I messed it up. Made a fool of myself. But before I did, she gave me something rare: a moment. Recognition. Proof that I wasn’t invisible. That maybe I never had been. And that stayed with me.</p>
+
+  <p>If Gillian ever reads this — I want her to see it first. Right here. Not buried on some page you’d never click to. Because she deserves to know: she mattered. She made a difference. She gave me a chance. And she gave me something else too — a future.</p>
+
+  <p>Because if not for Gillian, I never would’ve met Dawn. Never would’ve lived the life I have. I would’ve ended things. Quietly. Long ago. Gillian saved my life — just by being who she was.</p>
+
+  <hr>
+
+  <h2>And Then Came the Silence</h2>
+
+  <p>There was no silence. My mind told me I was better off dead. Unworthy. Useless. A waste of space.</p>
+
+  <p>I felt death would be such a release from myself.</p>
+
+  <p>I didn’t think about Gillian, or anything. My mind just kept tormenting me. The pills weren’t thought out — I just wanted out. But as they slowed my thoughts, something shifted. I realized what I had done. I called 111. They told me to wake my dad. I did — but not happily.</p>
+
+  <p>I could have died. It’s a thin line between life and death. And sometimes a kind word is enough to stay on the living side.</p>
+
+  <p>For me, Gillian’s warmth — years ago — kept me on the right side of that line.</p>
+
+  <p>If you can relate to this, let me tell you: you are not alone. I care, and so do many others. While there is life, there is hope. But not if you die.</p>
+
+  <p><strong>Please</strong>, talk to someone. Reach out. Don’t worry about the right words — just say what’s in your heart. Say: I can’t cope. I don’t know what to say. I think I want to die. Please help.</p>
+
+  <p>You're not invisible. You're not beyond saving. You're still here — and that matters.</p>
+
+  <img src="robotconstruction.png" alt="Robot under construction">
+
+  <a href="next.html" class="next-link">Next</a>
+
 </body>
 </html>
-
